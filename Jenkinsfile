@@ -1,9 +1,9 @@
-pipeline {
+pipeline{
     agent any
     stages{
-        stage('first stage'){
+        stage('one'){
             steps{
-                sh 'bash app.sh'
+                sh 'docker build -t mini3:latest .'
             }
         }
     }
